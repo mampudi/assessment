@@ -17,6 +17,10 @@ npm install --global yarn
 
 ```bash
 git clone https://github.com/mampudi/assessment.git
+```
+```bash
 cd assessment
+```
+```bash
 yarn
 ```
