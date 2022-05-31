@@ -41,5 +41,11 @@ Run the curl command to get the fee estimate
 ```bash
 curl http://localhost:1337/getfeeestimate
 ```
+```bash
+curl http://localhost:1337/getavgfeeestimatelast5blocks
+```
+```bash
+curl http://localhost:1337/getavgfeeestimatelast30blocks
+```
 
 You can use postman to execute the API calls.
