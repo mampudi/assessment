@@ -8,7 +8,7 @@ describe('Given the total gas is 10 ', function () {
         await setTotalBaseTransations(1);
         var response = await getEstimatedGas();
 
-      assert.equal(10, response.gasEstimate);
+      assert.equal(10, response.feeEstimate);
     });
   });
 });
@@ -20,7 +20,7 @@ describe('Given the total gas is 20 ', function () {
           await setTotalBaseTransations(2);
           var response = await getEstimatedGas();
   
-        assert.equal(10, response.gasEstimate);
+        assert.equal(10, response.feeEstimate);
       });
     });
   });
@@ -32,7 +32,7 @@ describe('Given the total gas is 20 ', function () {
           await setTotalBaseTransations(4);
           var response = await getEstimatedGas();
   
-        assert.equal(5, response.gasEstimate);
+        assert.equal(5, response.feeEstimate);
       });
     });
   });
@@ -44,7 +44,7 @@ describe('Given the total gas is 20 ', function () {
           await setTotalBaseTransations(8);
           var response = await getEstimatedGas();
   
-        assert.equal(1250000008, response.gasEstimate);
+        assert.equal(1250000008, response.feeEstimate);
       });
     });
   });

@@ -55,7 +55,7 @@ export async function GetTransactions(blockNumber:any){
 
 export async function getEstimatedGas() {
     average = fee/totalBaseTransations;
-    return { "blockNumber":latestBlock, "gasEstimate": average, "totalTransactionCount": totalTransations, "baseCurrencyTransactionsCount": totalBaseTransations, "totalBaseGasPrice": fee};
+    return { "blockNumber":latestBlock, "feeEstimate": average, "totalTransactionCount": totalTransations, "baseCurrencyTransactionsCount": totalBaseTransations, "totalBaseGasPrice": fee};
   }
 
   export async function setTotalBaseGasPrice(totalBaseGasPrice:number) {
